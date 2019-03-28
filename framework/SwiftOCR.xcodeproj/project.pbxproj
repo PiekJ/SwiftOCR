@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2186602659D8D9F7CDD1D358 /* Pods_SwiftOCR_MacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317381B6E2B88328BC42FED5 /* Pods_SwiftOCR_MacTests.framework */; };
+		2C4521DC11A74F711E1B25D3 /* Pods_SwiftOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8AEFFEFC4B54BB7A6AD5AA /* Pods_SwiftOCR.framework */; };
 		372578B71CD9259600785B68 /* CrossPlatformSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37711DEE1CD7E8A300DC6B43 /* CrossPlatformSupport.swift */; };
-		372578BF1CDA026E00785B68 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373ED1401CC9521B00C4758B /* GPUImage.framework */; };
 		373ED0B31CC9071D00C4758B /* SwiftOCR.h in Headers */ = {isa = PBXBuildFile; fileRef = 373ED0B21CC9071D00C4758B /* SwiftOCR.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		373ED0BA1CC9071D00C4758B /* SwiftOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373ED0AF1CC9071C00C4758B /* SwiftOCR.framework */; };
 		373ED0CB1CC9076300C4758B /* SwiftOCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373ED0C91CC9076300C4758B /* SwiftOCR.swift */; };
@@ -59,7 +60,8 @@
 		377885731CCCF37400A41020 /* TrainingBackground_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3778856C1CCCF37400A41020 /* TrainingBackground_4.png */; };
 		377885741CCCF37400A41020 /* TrainingBackground_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3778856C1CCCF37400A41020 /* TrainingBackground_4.png */; };
 		37A2346A1CDF9A1800CB3323 /* SwiftOCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778855C1CCCF11900A41020 /* SwiftOCRTests.swift */; };
-		37A2346B1CDFA5B200CB3323 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373ED1491CC9521B00C4758B /* GPUImage.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		39931E27AFFA110228134FBE /* Pods_SwiftOCR_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B260F6199CC81D564F86644A /* Pods_SwiftOCR_Mac.framework */; };
+		598593FADBDA09C9517B9771 /* Pods_SwiftOCRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F8D2178B46C709791E5D6D /* Pods_SwiftOCRTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,30 +79,12 @@
 			remoteGlobalIDString = 373ED0E51CC909A400C4758B;
 			remoteInfo = "SwiftOCR Mac";
 		};
-		373ED13F1CC9521B00C4758B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 373ED0D21CC908BD00C4758B /* GPUImageMac.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCA3F31C17239B6500E28AEC;
-			remoteInfo = GPUImage;
-		};
-		373ED1461CC9521B00C4758B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 373ED0CF1CC908BD00C4758B /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
-			remoteInfo = GPUImage;
-		};
-		373ED1481CC9521B00C4758B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 373ED0CF1CC908BD00C4758B /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCE209E51943F20C002FEED8;
-			remoteInfo = GPUImageFramework;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E6D7EC75C53158BAB44DF21 /* Pods-SwiftOCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOCR.release.xcconfig"; path = "Target Support Files/Pods-SwiftOCR/Pods-SwiftOCR.release.xcconfig"; sourceTree = "<group>"; };
+		2CB624BF7101B18910FC79E2 /* Pods-SwiftOCR Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOCR Mac.release.xcconfig"; path = "Target Support Files/Pods-SwiftOCR Mac/Pods-SwiftOCR Mac.release.xcconfig"; sourceTree = "<group>"; };
+		317381B6E2B88328BC42FED5 /* Pods_SwiftOCR_MacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOCR_MacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		373ED0AF1CC9071C00C4758B /* SwiftOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		373ED0B21CC9071D00C4758B /* SwiftOCR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOCR.h; sourceTree = "<group>"; };
 		373ED0B41CC9071D00C4758B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,8 +92,6 @@
 		373ED0C01CC9071D00C4758B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		373ED0C91CC9076300C4758B /* SwiftOCR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftOCR.swift; sourceTree = "<group>"; };
 		373ED0CA1CC9076300C4758B /* SwiftOCRTraining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftOCRTraining.swift; sourceTree = "<group>"; };
-		373ED0CF1CC908BD00C4758B /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "GPUImage-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
-		373ED0D21CC908BD00C4758B /* GPUImageMac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImageMac.xcodeproj; path = "GPUImage-master/framework/GPUImageMac.xcodeproj"; sourceTree = "<group>"; };
 		373ED0E61CC909A500C4758B /* SwiftOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		373ED0EF1CC909A500C4758B /* SwiftOCR MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftOCR MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		373ED1001CC90A2300C4758B /* FFNN+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFNN+Storage.swift"; sourceTree = "<group>"; };
@@ -131,6 +113,15 @@
 		3778856A1CCCF37400A41020 /* TrainingBackground_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrainingBackground_2.png; path = "Realistic Training Images/TrainingBackground_2.png"; sourceTree = "<group>"; };
 		3778856B1CCCF37400A41020 /* TrainingBackground_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrainingBackground_3.png; path = "Realistic Training Images/TrainingBackground_3.png"; sourceTree = "<group>"; };
 		3778856C1CCCF37400A41020 /* TrainingBackground_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrainingBackground_4.png; path = "Realistic Training Images/TrainingBackground_4.png"; sourceTree = "<group>"; };
+		3FEECA30D7ADA866A330C519 /* Pods-SwiftOCR Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOCR Mac.debug.xcconfig"; path = "Target Support Files/Pods-SwiftOCR Mac/Pods-SwiftOCR Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		6420575F5DD67E7AA43FF853 /* Pods-SwiftOCR MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOCR MacTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftOCR MacTests/Pods-SwiftOCR MacTests.release.xcconfig"; sourceTree = "<group>"; };
+		64E1697671F53E6B60E802DE /* Pods-SwiftOCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOCR.debug.xcconfig"; path = "Target Support Files/Pods-SwiftOCR/Pods-SwiftOCR.debug.xcconfig"; sourceTree = "<group>"; };
+		6F8AEFFEFC4B54BB7A6AD5AA /* Pods_SwiftOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		752577F6A21714A6004B957F /* Pods-SwiftOCR MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOCR MacTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftOCR MacTests/Pods-SwiftOCR MacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95F8D2178B46C709791E5D6D /* Pods_SwiftOCRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOCRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BB944C442D15144B168654 /* Pods-SwiftOCRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOCRTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftOCRTests/Pods-SwiftOCRTests.release.xcconfig"; sourceTree = "<group>"; };
+		B260F6199CC81D564F86644A /* Pods_SwiftOCR_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOCR_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6702E2908843F2A97F3574 /* Pods-SwiftOCRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOCRTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftOCRTests/Pods-SwiftOCRTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37A2346B1CDFA5B200CB3323 /* GPUImage.framework in Frameworks */,
+				2C4521DC11A74F711E1B25D3 /* Pods_SwiftOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				373ED0BA1CC9071D00C4758B /* SwiftOCR.framework in Frameworks */,
+				598593FADBDA09C9517B9771 /* Pods_SwiftOCRTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372578BF1CDA026E00785B68 /* GPUImage.framework in Frameworks */,
+				39931E27AFFA110228134FBE /* Pods_SwiftOCR_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,18 +155,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				373ED0F01CC909A500C4758B /* SwiftOCR.framework in Frameworks */,
+				2186602659D8D9F7CDD1D358 /* Pods_SwiftOCR_MacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052F9BBAAD650082AEC61090 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64E1697671F53E6B60E802DE /* Pods-SwiftOCR.debug.xcconfig */,
+				0E6D7EC75C53158BAB44DF21 /* Pods-SwiftOCR.release.xcconfig */,
+				3FEECA30D7ADA866A330C519 /* Pods-SwiftOCR Mac.debug.xcconfig */,
+				2CB624BF7101B18910FC79E2 /* Pods-SwiftOCR Mac.release.xcconfig */,
+				752577F6A21714A6004B957F /* Pods-SwiftOCR MacTests.debug.xcconfig */,
+				6420575F5DD67E7AA43FF853 /* Pods-SwiftOCR MacTests.release.xcconfig */,
+				BE6702E2908843F2A97F3574 /* Pods-SwiftOCRTests.debug.xcconfig */,
+				96BB944C442D15144B168654 /* Pods-SwiftOCRTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		373ED0A51CC9071C00C4758B = {
 			isa = PBXGroup;
 			children = (
 				373ED0B11CC9071D00C4758B /* SwiftOCR */,
 				373ED0BD1CC9071D00C4758B /* SwiftOCRTests */,
 				373ED0B01CC9071C00C4758B /* Products */,
+				052F9BBAAD650082AEC61090 /* Pods */,
+				7071964037A0C37C156B3DD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,8 +240,6 @@
 			children = (
 				373ED0B21CC9071D00C4758B /* SwiftOCR.h */,
 				373ED0B41CC9071D00C4758B /* Info.plist */,
-				373ED0CF1CC908BD00C4758B /* GPUImage.xcodeproj */,
-				373ED0D21CC908BD00C4758B /* GPUImageMac.xcodeproj */,
 				373ED1631CC9540100C4758B /* Realistic Training Images */,
 				373ED0FF1CC90A2300C4758B /* FFNN */,
 				37711DEE1CD7E8A300DC6B43 /* CrossPlatformSupport.swift */,
@@ -238,23 +247,6 @@
 				373ED1991CC9634400C4758B /* UnionFind.swift */,
 			);
 			name = "Supporting files";
-			sourceTree = "<group>";
-		};
-		373ED13C1CC9521B00C4758B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				373ED1401CC9521B00C4758B /* GPUImage.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		373ED1411CC9521B00C4758B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				373ED1471CC9521B00C4758B /* libGPUImage.a */,
-				373ED1491CC9521B00C4758B /* GPUImage.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		373ED1631CC9540100C4758B /* Realistic Training Images */ = {
@@ -276,6 +268,17 @@
 				375558171CDF7DA8008CED46 /* Test 3.png */,
 			);
 			path = "Test Images";
+			sourceTree = "<group>";
+		};
+		7071964037A0C37C156B3DD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F8AEFFEFC4B54BB7A6AD5AA /* Pods_SwiftOCR.framework */,
+				95F8D2178B46C709791E5D6D /* Pods_SwiftOCRTests.framework */,
+				B260F6199CC81D564F86644A /* Pods_SwiftOCR_Mac.framework */,
+				317381B6E2B88328BC42FED5 /* Pods_SwiftOCR_MacTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 373ED0C31CC9071D00C4758B /* Build configuration list for PBXNativeTarget "SwiftOCR" */;
 			buildPhases = (
+				A9AFA169509C1FB5B4FD7BAB /* [CP] Check Pods Manifest.lock */,
 				373ED0AA1CC9071C00C4758B /* Sources */,
 				373ED0AB1CC9071C00C4758B /* Frameworks */,
 				373ED0AC1CC9071C00C4758B /* Headers */,
@@ -321,6 +325,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 373ED0C61CC9071D00C4758B /* Build configuration list for PBXNativeTarget "SwiftOCRTests" */;
 			buildPhases = (
+				4770D7C3785F776EA577F554 /* [CP] Check Pods Manifest.lock */,
 				373ED0B51CC9071D00C4758B /* Sources */,
 				373ED0B61CC9071D00C4758B /* Frameworks */,
 				373ED0B71CC9071D00C4758B /* Resources */,
@@ -339,6 +344,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 373ED0F71CC909A500C4758B /* Build configuration list for PBXNativeTarget "SwiftOCR Mac" */;
 			buildPhases = (
+				2755D69CA18AA7FC786B64B9 /* [CP] Check Pods Manifest.lock */,
 				373ED0E11CC909A400C4758B /* Sources */,
 				373ED0E21CC909A400C4758B /* Frameworks */,
 				373ED0E31CC909A400C4758B /* Headers */,
@@ -357,6 +363,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 373ED0FA1CC909A500C4758B /* Build configuration list for PBXNativeTarget "SwiftOCR MacTests" */;
 			buildPhases = (
+				EE98E4DC3DF6F49E55C1627D /* [CP] Check Pods Manifest.lock */,
 				373ED0EB1CC909A500C4758B /* Sources */,
 				373ED0EC1CC909A500C4758B /* Frameworks */,
 				373ED0ED1CC909A500C4758B /* Resources */,
@@ -409,16 +416,6 @@
 			mainGroup = 373ED0A51CC9071C00C4758B;
 			productRefGroup = 373ED0B01CC9071C00C4758B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 373ED1411CC9521B00C4758B /* Products */;
-					ProjectRef = 373ED0CF1CC908BD00C4758B /* GPUImage.xcodeproj */;
-				},
-				{
-					ProductGroup = 373ED13C1CC9521B00C4758B /* Products */;
-					ProjectRef = 373ED0D21CC908BD00C4758B /* GPUImageMac.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				373ED0AE1CC9071C00C4758B /* SwiftOCR */,
@@ -428,30 +425,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		373ED1401CC9521B00C4758B /* GPUImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPUImage.framework;
-			remoteRef = 373ED13F1CC9521B00C4758B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		373ED1471CC9521B00C4758B /* libGPUImage.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGPUImage.a;
-			remoteRef = 373ED1461CC9521B00C4758B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		373ED1491CC9521B00C4758B /* GPUImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPUImage.framework;
-			remoteRef = 373ED1481CC9521B00C4758B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		373ED0AD1CC9071C00C4758B /* Resources */ = {
@@ -505,6 +478,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2755D69CA18AA7FC786B64B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftOCR Mac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4770D7C3785F776EA577F554 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftOCRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9AFA169509C1FB5B4FD7BAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftOCR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE98E4DC3DF6F49E55C1627D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftOCR MacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		373ED0AA1CC9071C00C4758B /* Sources */ = {
@@ -690,6 +754,7 @@
 		};
 		373ED0C41CC9071D00C4758B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E1697671F53E6B60E802DE /* Pods-SwiftOCR.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -724,6 +789,7 @@
 		};
 		373ED0C51CC9071D00C4758B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6D7EC75C53158BAB44DF21 /* Pods-SwiftOCR.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -760,6 +826,7 @@
 		};
 		373ED0C71CC9071D00C4758B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE6702E2908843F2A97F3574 /* Pods-SwiftOCRTests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = A2254B55UZ;
 				INFOPLIST_FILE = SwiftOCRTests/Info.plist;
@@ -776,6 +843,7 @@
 		};
 		373ED0C81CC9071D00C4758B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96BB944C442D15144B168654 /* Pods-SwiftOCRTests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = A2254B55UZ;
 				INFOPLIST_FILE = SwiftOCRTests/Info.plist;
@@ -794,6 +862,7 @@
 		};
 		373ED0F81CC909A500C4758B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FEECA30D7ADA866A330C519 /* Pods-SwiftOCR Mac.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -820,6 +889,7 @@
 		};
 		373ED0F91CC909A500C4758B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB624BF7101B18910FC79E2 /* Pods-SwiftOCR Mac.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -849,6 +919,7 @@
 		};
 		373ED0FB1CC909A500C4758B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 752577F6A21714A6004B957F /* Pods-SwiftOCR MacTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -870,6 +941,7 @@
 		};
 		373ED0FC1CC909A500C4758B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6420575F5DD67E7AA43FF853 /* Pods-SwiftOCR MacTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
