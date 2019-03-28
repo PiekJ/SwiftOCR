@@ -69,7 +69,7 @@ Pod::Spec.new do |s|
 
   #  When using multiple platforms
   s.ios.deployment_target = "12.2"
-  s.osx.deployment_target = "10.12"
+  # s.osx.deployment_target = "10.12"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
@@ -105,6 +105,7 @@ Pod::Spec.new do |s|
   #
 
   s.resources  = "framework/SwiftOCR/OCR-Network", "framework/SwiftOCR/Realistic Training Images/*.png"
+
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -124,7 +125,7 @@ Pod::Spec.new do |s|
 
   # s.dependency "GPUImage", "~> 0.1.7"
 
-  s.vendored_frameworks = "GPUImage.framework"
+  # s.vendored_frameworks = "GPUImage.framework"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
