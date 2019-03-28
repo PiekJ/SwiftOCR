@@ -116,13 +116,15 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "GPUImage.framework"
+  # s.framework  = "GPUImage.framework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
   # s.dependency "GPUImage", "~> 0.1.7"
+
+  s.vendored_frameworks = "GPUImage.framework"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
