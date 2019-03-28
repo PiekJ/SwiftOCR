@@ -577,7 +577,11 @@ open class SwiftOCR {
             dodgeBlendFilter.useNextFrameForImageCapture()
             image?.processImage()
             
-            let orientationUp = UIImage.Orientation.up
+            #if os(iOS)
+                let orientationUp = UIImage.Orientation.up
+            #else
+                let orientationUp = UIImageOrientation.up
+            #endif
             
             var processedImage:OCRImage? = dodgeBlendFilter.imageFromCurrentFramebuffer(with: orientationUp)
             
@@ -621,7 +625,11 @@ open class SwiftOCR {
         thresholdFilter.useNextFrameForImageCapture()
         picture?.processImage()
         
-        let orientationUp = UIImage.Orientation.up
+        #if os(iOS)
+            let orientationUp = UIImage.Orientation.up
+        #else
+            let orientationUp = UIImageOrientation.up
+        #endif
         
         var processedImage:OCRImage? = thresholdFilter.imageFromCurrentFramebuffer(with: orientationUp)
         
