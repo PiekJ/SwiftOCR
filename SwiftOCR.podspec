@@ -123,7 +123,7 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
-  # s.dependency "GPUImage", "~> 0.1.7"
+  s.dependency "GPUImage", "~> 0.1.7"
 
   # s.vendored_frameworks = "GPUImage.framework"
 
