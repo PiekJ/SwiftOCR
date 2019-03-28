@@ -122,6 +122,8 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
+  s.dependency "GPUImage", "~> 0.1.7"
+
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -132,6 +134,8 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   s.xcconfig = { "SWIFT_VERSION" => "4.2" }
+
+  s.swift_version = "5"
   
 
 end
