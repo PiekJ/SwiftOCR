@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/PiekJ/SwiftOCR.git" }
+  s.source       = { :git => "https://github.com/PiekJ/SwiftOCR.git", :branch => "testing-with-macos" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "framework/SwiftOCR/*.swift", "framework/SwiftOCR/FFNN/*.swift" 
+  s.source_files  = "framework/SwiftOCR/*.swift", "framework/SwiftOCR/FFNN/*.swift"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -116,13 +116,13 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "GPUImage"
+  s.framework  = "GPUImage"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
-  s.dependency "GPUImage", "~> 0.1.7"
+  # s.dependency "GPUImage", "~> 0.1.7"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
