@@ -61,27 +61,35 @@ open class SwiftOCR {
     
     ///All SwiftOCRRecognizedBlob from the last recognition
     open      var currentOCRRecognizedBlobs = [SwiftOCRRecognizedBlob]()
-    
-    
-    //MARK: Init
-    public   init(){}
-    
-	public   init(recognizableCharacters: String, network: FFNN) {
-		self.characters = recognizableCharacters
-		self.network = network
-	}
-	
-	public   init(image: OCRImage, delegate: SwiftOCRDelegate?, _ completionHandler: @escaping (String) -> Void){
-		self.delegate = delegate
-		self.recognize(image, completionHandler)
-	}
-	
-	public   init(recognizableCharacters: String, network: FFNN, image: OCRImage, delegate: SwiftOCRDelegate?, _ completionHandler: @escaping (String) -> Void) {
-		self.characters = recognizableCharacters
-		self.network = network
-		self.delegate = delegate
-		self.recognize(image, completionHandler)
-	}
+
+    //Some applications will crash if called quickly in succession from double-free or other concurrency errors. Passing in a serial queue will prevent these crashes.
+    open var dispatchQueue:DispatchQueue
+
+  //MARK: Init
+  public   init(dispatchQueue:DispatchQueue = DispatchQueue.global(qos: .userInitiated)){
+    self.dispatchQueue = dispatchQueue
+  }
+
+
+  public   init(recognizableCharacters: String, network: FFNN,dispatchQueue:DispatchQueue = DispatchQueue.global(qos: .userInitiated)) {
+    self.dispatchQueue = dispatchQueue
+    self.characters = recognizableCharacters
+    self.network = network
+  }
+
+  public   init(image: OCRImage, delegate: SwiftOCRDelegate?, dispatchQueue:DispatchQueue = DispatchQueue.global(qos: .userInitiated), _ completionHandler: @escaping (String) -> Void){
+    self.dispatchQueue = dispatchQueue
+    self.delegate = delegate
+    self.recognize(image, completionHandler)
+  }
+
+  public   init(recognizableCharacters: String, network: FFNN, image: OCRImage, delegate: SwiftOCRDelegate?, dispatchQueue:DispatchQueue = DispatchQueue.global(qos: .userInitiated), _ completionHandler: @escaping (String) -> Void) {
+    self.dispatchQueue = dispatchQueue
+    self.characters = recognizableCharacters
+    self.network = network
+    self.delegate = delegate
+    self.recognize(image, completionHandler)
+  }
 	
     /**
      
@@ -105,7 +113,7 @@ open class SwiftOCR {
             return whiteList && blackList
         }
 
-        DispatchQueue.global(qos: .userInitiated).async {
+        dispatchQueue.async {
             let preprocessedImage      = self.delegate?.preprocessImageForOCR(image) ?? self.preprocessImageForOCR(image)
             
             let blobs                  = self.extractBlobs(preprocessedImage)
@@ -179,7 +187,7 @@ open class SwiftOCR {
      */
     
     open   func recognizeInRect(_ image: OCRImage, rect: CGRect, completionHandler: @escaping (String) -> Void){
-        DispatchQueue.global(qos: .userInitiated).async {
+        dispatchQueue.async {
             #if os(iOS)
                 let cgImage        = image.cgImage
                 let croppedCGImage = cgImage?.cropping(to: rect)!
